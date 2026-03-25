@@ -78,18 +78,14 @@ print("\nResultado final:")
 print("X =", round(x1, 4))
 print("Y =", round(y1, 4))
 
-# -------------------------
-# GRÁFICA TIPO CUADERNO
-# -------------------------
 
-# Valores de x como en tabla
+# Valores de x 
 x_vals = np.arange(0, 6, 1)
 
 # Listas
 y1_vals = []
 y2_vals = []
 
-# Usamos un valor base de y cercano a la solución
 y_base = y1
 
 for x_val in x_vals:
@@ -100,14 +96,14 @@ for x_val in x_vals:
         y1_vals.append(None)
         y2_vals.append(None)
 
-# Graficar puntos tipo cuaderno
+# Graficar puntos 
 plt.plot(x_vals, y1_vals, marker='o')
 plt.plot(x_vals, y2_vals, marker='o')
 
 # Punto solución
 plt.scatter(x1, y1, s=80)
 
-plt.title("Gráfica tipo cuaderno")
+plt.title("Gráfica")
 plt.xlabel("x")
 plt.ylabel("y")
 
